@@ -1,0 +1,30 @@
+.contactBlock {
+    height: 100vh;
+}
+
+.contactContainer {
+    height: 100%;
+    flex-direction: column;
+    background-color: seagreen;
+    align-items: center;
+    justify-content: flex-start;
+    /*justify-content: flex-start;*/
+}
+
+.contactForm{
+    width: 60%;
+    background-color: goldenrod;
+}
+
+.contactForm label {
+    cursor: pointer;
+}
+/*.contactForm input, textarea{*/
+/*    background-color: transparent;*/
+/*}*/
+.contactForm  .field > input:focus, textarea:focus {
+    border-color: #ff3d4f;
+    outline: 0px;
+}
+
+
