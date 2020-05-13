@@ -4,6 +4,7 @@ import style from './Skill.module.css';
 type SkillType = {
     title: string
 }
+
 const Skill = (props: SkillType) => {
     const {title} = props;
     return (

@@ -1,0 +1,12 @@
+
+
+.work {
+    width: 250px;
+    background-color: goldenrod;
+}
+.img {
+    width: 100%;
+    height: 200px;
+    background-color: lightslategray;
+    outline: 1px solid;
+}
