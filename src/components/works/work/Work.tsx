@@ -1,6 +1,5 @@
 import React from "react";
 import style from './Work.module.css';
-import styleContainer from '../common/styles/Container.module.css';
 
 type PropsType = {
     title: string,

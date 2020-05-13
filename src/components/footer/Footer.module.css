@@ -1,0 +1,27 @@
+.footerBlock {
+    height: 100vh;
+}
+
+.footerContainer {
+    height: 100%;
+    flex-direction: column;
+    background-color: darkslategrey;
+    align-items: center;
+    justify-content: flex-start;
+    /*justify-content: flex-start;*/
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.infoContact{
+    width: 80%;
+    background-color: #c3ea75;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
