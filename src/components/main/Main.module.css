@@ -1,5 +1,6 @@
 .mainBlock {
     height: 100vh;
+    display: flex;
 }
 .info {
     width: 450px;
