@@ -7,7 +7,7 @@ const Contact = () => {
         <div className={style.contactBlock}>
             <div className={`${styleContainer.container} ${style.contactContainer}`}>
                 <h2>Contacts</h2>
-                <div className={style.contactForm}>
+                <div className={style.contactFormItem}>
                     <h3 className={style.contactTitle}>get in touch</h3>
                     <form action="#" method={"post"} className={style.contactForm}>
                         <div className={style.field}>
