@@ -1,12 +1,14 @@
 import React from "react";
 import style from './Contact.module.css';
 import styleContainer from '../common/styles/Container.module.css';
+import Title from "../common/components/title/Title";
+import { faClipboard, faBriefcase} from '@fortawesome/free-solid-svg-icons'
 
 const Contact = () => {
     return (
         <div className={style.contactBlock}>
             <div className={`${styleContainer.container} ${style.contactContainer}`}>
-                <h2>Contacts</h2>
+                <Title title={'Contact Me.'} icon={faClipboard}/>
                 <div className={style.contactFormItem}>
                     <h3 className={style.contactTitle}>get in touch</h3>
                     <form action="#" method={"post"} className={style.contactForm}>
