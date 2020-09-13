@@ -3,6 +3,8 @@
 /*  src: url(‘/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf’)*/
 /*}*/
 
+@import "src/components/common/styles/sass/variables";
+
 * {
     margin: 0;
     padding: 0;
@@ -24,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Playfair Display", serif;
     font-weight: 500;
     line-height: 1.2;
-    color: #fff;
+    color: $titleColor;
 }
 body {
     margin: 0;
@@ -36,7 +38,7 @@ body {
     font-size: 16px;
     font-family: "Roboto", sans-serif;
     line-height: 1.65;
-    color: #e1e1e1;
+    color: $textColor;
 }
 
 code {

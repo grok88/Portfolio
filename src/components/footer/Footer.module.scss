@@ -1,0 +1,30 @@
+@import './../common/styles/sass/variables.scss';
+
+.footerBlock {
+    background-color: $bgColor;
+}
+
+.footerContainer {
+    height: 100%;
+    flex-direction: column;
+    background-color: $bgColor;
+    align-items: center;
+    justify-content: flex-start;
+    /*justify-content: flex-start;*/
+}
+
+//.footer {
+//    display: flex;
+//    flex-wrap: wrap;
+//    width: 100%;
+//    justify-content: center;
+//}
+
+.infoContact{
+    width: 80%;
+    background-color: $bgColor;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    outline: 1px solid red;
+}

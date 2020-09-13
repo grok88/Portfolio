@@ -1,5 +1,5 @@
 import React from "react";
-import style from './ContactBlock.module.css';
+import style from './ContactBlock.module.scss';
 
 type PropsType = {
     title:string,

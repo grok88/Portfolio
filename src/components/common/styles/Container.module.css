@@ -1,5 +1,7 @@
 .container {
     background-color: #e6a36b;
+
+    max-width: 1200px;
     width: 80%;
     /*height: 100%;*/
     /*outline: 1px solid;*/
@@ -8,4 +10,15 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+@media screen and (max-width: 992px) {
+    .container{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .container{
+        width: 95%;
+    }
 }

@@ -1,14 +1,15 @@
 import React from "react";
-import style from './Footer.module.css';
+import style from './Footer.module.scss';
 import styleContainer from '../common/styles/Container.module.css';
 import ContactBlock from "./contactBlock/ContactBlock";
-
+import Title from "../common/components/title/Title";
+import {faIdCard} from '@fortawesome/free-solid-svg-icons'
 
 const Footer = () => {
     return (
         <div className={style.footerBlock}>
             <div className={`${styleContainer.container} ${style.footerContainer}`}>
-                <h2>Alex Gor</h2>
+                <Title title={'Alexander Goryacko'} icon={faIdCard}/>
                 <div className={style.infoContact}>
                    <ContactBlock  title={"Email"} contentSpanOne={"test@mail.ru"} contentSpanTwo={"grok88@tut.by"}/>
                    <ContactBlock  title={"Call us"} contentSpanOne={"+375 29 500-0000"} contentSpanTwo={"+375 29 300-0000"}/>
