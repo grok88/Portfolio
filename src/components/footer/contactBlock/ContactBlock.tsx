@@ -11,7 +11,7 @@ const ContactBlock = (props:PropsType) => {
     const {title, contentSpanOne, contentSpanTwo} = props;
     return (
         <div className={style.contactBlock}>
-            <h4>{title}</h4>
+            <h4 className={style.title}>{title}</h4>
             <span>{contentSpanOne}</span>
             <span>{contentSpanTwo}</span>
         </div>

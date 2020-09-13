@@ -1,3 +1,5 @@
+@import './../common/styles/sass/variables.scss';
+
 .contactBlock {
     height: 100vh;
     background-color: #444749;
@@ -22,7 +24,7 @@
 }
 
 .contactForm  .field > input:focus, textarea:focus {
-    border-color: #ff3d4f;
+    border-color: $mainColor;
     outline: 0px;
 }
 

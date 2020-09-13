@@ -1,7 +1,42 @@
 @import './../../common/styles/sass/variables.scss';
 
 .contactBlock{
-    background-color: $bgColor;
-    width: 200px;
-    outline: 1px solid red;
+    background-color: $bgSecondColor;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 33.3333%;
+    text-align: center;
+}
+.contactBlock .title{
+    font-family: "Playfair Display", serif;
+    font-size: 21px;
+    color:$titleColor;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 1.4;
+
+    letter-spacing: 0.5px;
+}
+.contactBlock span{
+
+    display: block;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.5px;
+    margin: 0;
+    color:$textColor;
+}
+
+@media screen and (max-width: 992px) {
+    .contactBlock{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .contactBlock{
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
