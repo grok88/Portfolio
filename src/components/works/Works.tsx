@@ -2,7 +2,10 @@ import React from 'react';
 import style from './Works.module.scss';
 import styleContainer from '../common/styles/Container.module.css';
 import Work from './work/Work';
-import {faBriefcase} from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+//     import { faReact} from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope,faBriefcase  } from '@fortawesome/free-solid-svg-icons'
+
 import Title from '../common/components/title/Title';
 import social from  './../../assets/images/social.jpg'
 import todolist from  './../../assets/images/todolist.jpg'
@@ -12,7 +15,7 @@ import plug from  './../../assets/images/plug.jpg'
 const Works = () => {
     return (
         <div className={style.worksBlock}>
-            <div className={style.line}></div>
+            {/*<div className={style.line}></div>*/}
             <div className={`${styleContainer.container} ${style.worksContainer}`}>
               <Title title={'Portfolio.'}  icon={faBriefcase}/>
                 <div className={style.works}>

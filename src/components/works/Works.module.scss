@@ -8,7 +8,7 @@
   & .line {
     position: absolute;
     width: 100%;
-    height: 10px;
+    height: 1px;
     top: 0;
     right: 0;
     background: rgba(255, 255, 255, 0.1);
@@ -24,7 +24,7 @@
 
       animation-fill-mode: forwards;
       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, #ff3d4f 75%, #ff3d4f);
-      animation: run 8s 0s infinite;
+      animation: lineAnimation 6s 0s infinite;
       animation-fill-mode: forwards;
       animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
     }
@@ -48,3 +48,12 @@
   }
 }
 
+@keyframes lineAnimation {
+from {
+    right: 0%;
+  }
+
+  to {
+    right: 100%;
+  }
+}

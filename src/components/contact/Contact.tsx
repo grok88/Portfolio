@@ -3,7 +3,9 @@ import style from './Contact.module.scss';
 import styleContainer from '../common/styles/Container.module.css';
 import Title from '../common/components/title/Title';
 import {faArchway, faClipboard} from '@fortawesome/free-solid-svg-icons';
+import {faFacebookF, faGithub, faLinkedin, faVk} from '@fortawesome/free-brands-svg-icons'
 import {useFormik} from 'formik';
+import axios from 'axios';
 
 
 import {FontAwesomeIcon,} from "@fortawesome/react-fontawesome";
@@ -49,7 +51,14 @@ const Contact = () => {
         },
         validate,
         onSubmit: values => {
-            alert(JSON.stringify(values));
+            axios.post('/sendMessage', {values})
+                .then((res) => {
+                    alert(JSON.stringify(values));
+                })
+                .catch(err => {
+                    console.log(err);
+                });
+
             formik.resetForm();
             // resetForm({name:''});
         },
@@ -57,7 +66,9 @@ const Contact = () => {
 
     return (
         <div className={style.contactBlock}>
+            <div className={style.line}></div>
             <div className={`${styleContainer.container} ${style.contactContainer}`}>
+
                 <Title title={'Contact Me.'} icon={faClipboard}/>
                 <div className={style.contactFormItem}>
                     <h4 className={style.contactTitle}>get in touch</h4>
@@ -73,7 +84,8 @@ const Contact = () => {
                                 {formik.touched.email && formik.errors.email ?
                                     <span style={{color: 'red'}}>{formik.errors.email}</span> : 'Enter your Email*'}
                             </label>
-                            <input type="text" name="email" id={"contactFormUserEmail"} {...formik.getFieldProps('email')}/>
+                            <input type="text" name="email"
+                                   id={"contactFormUserEmail"} {...formik.getFieldProps('email')}/>
                             {/*<ErrorMessage name="email" />*/}
                         </div>
                         <div className={`${style.field} ${style.message}`}>
@@ -93,22 +105,22 @@ const Contact = () => {
                     <ul className={style.socialsList}>
                         <li>
                             <a href="#">
-                                <FontAwesomeIcon icon={faArchway} className={style.fa}/>
+                                <FontAwesomeIcon icon={faFacebookF} className={style.fa}/>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <FontAwesomeIcon icon={faArchway} className={style.fa}/>
+                                <FontAwesomeIcon icon={faGithub} className={style.fa}/>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <FontAwesomeIcon icon={faArchway} className={style.fa}/>
+                                <FontAwesomeIcon icon={faLinkedin} className={style.fa}/>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <FontAwesomeIcon icon={faArchway} className={style.fa}/>
+                                <FontAwesomeIcon icon={faVk} className={style.fa}/>
                             </a>
                         </li>
                     </ul>
