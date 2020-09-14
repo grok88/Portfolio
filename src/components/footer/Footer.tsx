@@ -12,7 +12,7 @@ const Footer = () => {
                 <Title title={'Alexander Goryacko'} icon={faIdCard}/>
                 <div className={style.infoContact}>
                    <ContactBlock  title={"Email"} contentSpanOne={"test@mail.ru"} contentSpanTwo={"grok88@tut.by"}/>
-                   <ContactBlock  title={"Call us"} contentSpanOne={"+375 29 500-0000"} contentSpanTwo={"+375 29 300-0000"}/>
+                   <ContactBlock  title={"Call me"} contentSpanOne={"+375 29 500-0000"} contentSpanTwo={"+375 29 300-0000"}/>
                    <ContactBlock  title={"Address"} contentSpanOne={"г.Глубокое, ул. Садовая 34 , кв 44"} contentSpanTwo={"Витебская обл., Беларусь"}/>
                 </div>
                 <div className={style.copyRight}>
