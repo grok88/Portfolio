@@ -53,9 +53,12 @@
   color: $textColor;
 }
 
-.field input {
+.field input, {
   height: 50px;
   padding: 0 15px;
+}
+.field textarea{
+  padding:  15px;
 }
 
 .field input, .field textarea {
