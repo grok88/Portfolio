@@ -51,9 +51,9 @@ const Contact = () => {
         },
         validate,
         onSubmit: values => {
-            axios.post('/sendMessage', {values})
+            axios.post('https://my-smtp-nodejs-server.herokuapp.com/sendMessage', {values})
                 .then((res) => {
-                    alert(JSON.stringify(values));
+                    alert('message has been send!!!');
                 })
                 .catch(err => {
                     console.log(err);
