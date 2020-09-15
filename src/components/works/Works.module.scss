@@ -3,7 +3,7 @@
 .worksBlock {
   /*min-height: 100vh;*/
   display: flex;
-  background-color: $bgColor;
+  background-color: $bgSecondColor;
   position: relative;
   & .line {
     position: absolute;
@@ -32,7 +32,7 @@
   .worksContainer {
     flex-direction: column;
     flex-wrap: nowrap;
-    background-color: $bgColor;
+    background-color: $bgSecondColor;
     margin: 0 auto;
 
     .works {

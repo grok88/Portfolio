@@ -1,0 +1,75 @@
+@import "../common/styles/sass/variables";
+
+// main div
+.sidebar{
+  position: fixed;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  z-index: 9999999;
+  overflow-y: auto;
+  transition: all .5s ease-in-out;
+  background-color: #1D1E20;
+  transform: translateX(0%);
+}
+
+.sidebar.sidebarLeft{
+  left:0;
+}
+@media screen and (max-width: 992px) {
+  .sidebar{
+    transform: translateX(-100%);
+    z-index: auto;
+  }
+}
+
+// logo
+.logo{
+  text-align: center;
+  padding: 35px 0 35px 0px;
+}
+.logo h1{
+  font-weight: 400;
+  //font-size: 75px;
+}
+.logo img{
+  vertical-align: middle;
+  max-width: inherit;
+  max-height: 80px;
+  width: auto;
+  margin: 0 20px;
+}
+
+//menu
+.menu{
+  padding-top: 0;
+  padding-bottom: 30px;
+  outline: 1px solid black;
+}
+
+//list
+.list{
+  padding-top: 0;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+  padding-left: 0;
+  list-style: none;
+}
+.list li{
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+}
+.list a{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-size: 20px;
+  padding: 10px 0 10px 30px;
+  color: #9da1a5;
+}
+
+.list a.active{
+  color: #ff3d4f;
+}

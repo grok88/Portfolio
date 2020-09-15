@@ -7,11 +7,13 @@ import Skills from "./components/skills/Skills";
 import Works from "./components/works/Works";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import {Sidebar} from "./components/sidebar/Sidebar";
 
 const App = () => {
     return (
         <div>
-            <Header/>
+            <Sidebar/>
+            {/*<Header/>*/}
             <Main/>
             <Skills/>
             <Works/>

@@ -5,15 +5,17 @@
   width: 33.3333%;
   padding-left: 15px;
   padding-right: 15px;
+
   /* work Item */
   .workItem {
     position: relative;
     display: block;
-    background-color:$bgColor;
+    background-color:$bgSecondColor;
     border: 1px solid #222324;
     margin-bottom: 50px;
     overflow: hidden;
     cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     /* work Image */
     .workImage {
       & img {
@@ -36,11 +38,12 @@
       text-align: center;
       width: 82%;
       position: relative;
-      background-color: $bgColor;
+      background-color: #222;
       margin-left: auto;
       margin-right: auto;
       margin-top: -40px;
-      border: 1px solid rgba(255, 255, 255, 0.1) !important;
+      border: 1px solid rgba(255, 255, 255, 0.1) ;
+      border-bottom: none;
       /* work Content Cat */
       .cat {
         color: $mainColor;
