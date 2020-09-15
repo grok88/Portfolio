@@ -1,0 +1,39 @@
+@import './../../common/styles/sass/variables.scss';
+
+.progressbarTitle{
+  color:#fff;
+}
+.progressbarTitle h3{
+  color:#9da1a5;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-family: "Playfair Display", serif;
+  line-height: 1.9;
+  letter-spacing: 0.5px;
+}
+.percent{
+  color:#9da1a5;
+  margin-top: 9px;
+  margin-bottom: 0;
+  font-size: 13px;
+  font-weight: 700;
+  float: right;
+}
+.barContainer{
+  background: #555;
+  position: relative;
+  width: 100%;
+  height: 3px;
+  margin-top: 5px;
+  display: block;
+}
+.progressbar{
+  background-color: $mainColor;
+  position: absolute;
+  height: 100%;
+}
+element.style {
+  width: 70%;
+}

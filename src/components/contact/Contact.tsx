@@ -36,8 +36,6 @@ const validate = (values: FormValuesType) => {
     if (!values.text) {
         errors.text = 'Required';
     }
-
-
     return errors;
 };
 

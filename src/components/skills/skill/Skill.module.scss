@@ -1,0 +1,144 @@
+@import './../../common/styles/sass/variables.scss';
+
+.skill {
+  width: 33.3333%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 30px;
+
+  position: relative;
+  @media screen and (max-width: 992px) {
+    width: 50%;
+  }
+  @media screen and (max-width: 576px) {
+    width: 100%;
+  }
+}
+
+.skillBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #222222;
+  cursor: pointer;
+  padding: 20px;
+  box-shadow: 0px 9px 31px 6px rgba(0, 0, 0, 0.2) !important;
+  transition: all .5s ease-in-out;
+
+}
+
+.draw {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  height: 100%;
+}
+
+.draw:before, .draw:after {
+  box-sizing: inherit;
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  //border: 1px solid transparent;
+  //border: 1px solid transparent;
+  border-top-color: transparent;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-right-color: transparent;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-bottom-color: transparent;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: transparent;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-image-source: initial;
+  border-image-slice: initial;
+  //border-image-width: initial;
+  //border-image-outset: initial;
+  border-image-repeat: initial;
+
+}
+.draw:hover:after {
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+  transition-property: border-color, width, height;
+  transition-duration: 0s, 0.25s, 0.25s;
+  transition-timing-function: ease-out, ease-out, ease-out;
+  transition-delay: 0.5s, 0.5s, 0.75s;
+  border-bottom-color: $mainColor;
+  border-left-color:$mainColor;
+}
+
+.draw:hover:before {
+  border-top-color:$mainColor;
+  border-right-color: $mainColor;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+
+.draw::before {
+  top: 0;
+  left: 0;
+}
+.draw::after {
+  bottom: 0;
+  right: 0;
+}
+
+.draw:hover:before, .draw:hover:after {
+  width: 100%;
+  height: 100%;
+}
+
+.draw:hover {
+  transition: all .5s ease-in-out;
+}
+
+
+
+.icon {
+  text-align: center;
+  opacity: 0.5;
+  margin: 0 0 1rem;
+  width: 64px;
+  height: 64px;
+}
+
+.draw:hover .fa {
+  opacity: 1;
+  color:$mainColor;
+}
+.draw:hover .icon {
+  opacity: 1;
+}
+
+.fa {
+  color: $textColor;
+  width: 100%;
+  height: 100%;
+  font-size: 50px;
+}
+
+.title {
+  color: $titleColor;
+  text-transform: capitalize !important;
+  //font-size: 20px;
+  //line-height: 1.4;
+  font-size: 1.43rem;
+  line-height: 2.14rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: "Saira";
+  letter-spacing: 0.5px;
+  position: relative;
+}
+
+.separator{
+  margin: 0;
+  color:$textColor;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}

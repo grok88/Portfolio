@@ -146,7 +146,9 @@
   transform-origin: 0 0;
   transition: all .4s ease-out;
 }
-
+.contactFormBtn:hover:before{
+  transform: scaleX(1);
+}
 //Social
 
 .socialsMedia {
