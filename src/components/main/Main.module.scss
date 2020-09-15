@@ -1,6 +1,9 @@
+@import "../common/styles/sass/variables";
+
 .mainBlock {
     height: 100vh;
     display: flex;
+    background-color: $bgSecondColor;
 }
 .info {
     width: 450px;

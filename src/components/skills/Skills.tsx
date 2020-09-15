@@ -1,6 +1,6 @@
 import React from "react";
 import style from './Skills.module.scss';
-import styleContainer from '../common/styles/Container.module.css'
+import styleContainer from '../common/styles/Container.module.scss'
 import Skill from "./skill/Skill";
 import {faLaptopCode} from '@fortawesome/free-solid-svg-icons'
 import Title from "../common/components/title/Title";
@@ -10,7 +10,7 @@ import {SkillBar} from "./skillBar/SkillBar";
 const Skills = () => {
     return (
         <div className={style.skillBlock}>
-            <div className={`${styleContainer.container} ${style.skillContainer}`}>
+            <div id={'skills'} className={`${styleContainer.container} ${style.skillContainer}`}>
                 <Title title={'My skills.'} icon={faLaptopCode}/>
                 <div className={style.aboutInfo}>
                     <div className={style.aboutInfoBlock}>

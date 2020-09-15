@@ -1,10 +1,10 @@
 import React from "react";
-import style from './Main.module.css';
-import styleContainer from '../common/styles/Container.module.css'
+import style from './Main.module.scss';
+import styleContainer from '../common/styles/Container.module.scss'
 
 const Main = () => {
     return (
-        <div className={style.mainBlock}>
+        <div id='header' className={style.mainBlock}>
             <div className={styleContainer.container}>
                 <div className={style.info}>
                     <span>Hi There</span>

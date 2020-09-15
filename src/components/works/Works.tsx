@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Works.module.scss';
-import styleContainer from '../common/styles/Container.module.css';
+import styleContainer from '../common/styles/Container.module.scss';
 import Work from './work/Work';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 //     import { faReact} from '@fortawesome/free-brands-svg-icons'
@@ -14,7 +14,7 @@ import plug from  './../../assets/images/plug.jpg'
 
 const Works = () => {
     return (
-        <div className={style.worksBlock}>
+        <div  id={'portfolio'} className={style.worksBlock}>
             {/*<div className={style.line}></div>*/}
             <div className={`${styleContainer.container} ${style.worksContainer}`}>
               <Title title={'Portfolio.'}  icon={faBriefcase}/>

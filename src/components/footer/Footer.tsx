@@ -1,6 +1,6 @@
 import React from "react";
 import style from './Footer.module.scss';
-import styleContainer from '../common/styles/Container.module.css';
+import styleContainer from '../common/styles/Container.module.scss';
 import ContactBlock from "./contactBlock/ContactBlock";
 import Title from "../common/components/title/Title";
 import {faIdCard} from '@fortawesome/free-solid-svg-icons'

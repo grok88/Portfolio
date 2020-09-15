@@ -1,8 +1,9 @@
+@import "../../common/styles/sass/variables";
 .container {
-    background-color: #e6a36b;
+    background-color: $bgSecondColor;
 
     max-width: 1200px;
-    width: 80%;
+    width: 95%;
     /*height: 100%;*/
     /*outline: 1px solid;*/
     margin: 0 auto;
@@ -12,11 +13,17 @@
     flex-wrap: wrap;
 }
 
+@media screen and (max-width: 1200px) {
+    .container{
+        width: 80%;
+    }
+}
 @media screen and (max-width: 992px) {
     .container{
         width: 95%;
     }
 }
+
 @media screen and (max-width: 576px) {
     .container{
         width: 95%;

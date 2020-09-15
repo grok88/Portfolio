@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Contact.module.scss';
-import styleContainer from '../common/styles/Container.module.css';
+import styleContainer from '../common/styles/Container.module.scss';
 import Title from '../common/components/title/Title';
 import {faArchway, faClipboard} from '@fortawesome/free-solid-svg-icons';
 import {faFacebookF, faGithub, faLinkedin, faVk} from '@fortawesome/free-brands-svg-icons'
@@ -63,7 +63,7 @@ const Contact = () => {
     });
 
     return (
-        <div className={style.contactBlock}>
+        <div id={'contact'} className={style.contactBlock}>
             <div className={style.line}></div>
             <div className={`${styleContainer.container} ${style.contactContainer}`}>
 
