@@ -20,12 +20,13 @@
 }
 @media screen and (max-width: 992px) {
     .container{
-        width: 95%;
+        width: 90%;
+        justify-content: center;
     }
 }
 
 @media screen and (max-width: 576px) {
     .container{
-        width: 95%;
+        width: 90%;
     }
 }
