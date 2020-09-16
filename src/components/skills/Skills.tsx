@@ -28,13 +28,6 @@ const Skills = () => {
                         <div className={style.aboutSkills}>
                             <ul className={style.skillsBar}>
                                 <li>
-                                    {/*<div className={style.progressbarTitle}>*/}
-                                    {/*    <h3>JS</h3>*/}
-                                    {/*    <span className={style.percent}>80%</span>*/}
-                                    {/*</div>*/}
-                                    {/*<div className={style.barContainer}>*/}
-                                    {/*    <span className={style.progressbar} style={{width: '80%'}}></span>*/}
-                                    {/*</div>*/}
                                     <SkillBar title={'JS'} percent={'80'}/>
                                 </li>
                                 <li>
@@ -59,7 +52,6 @@ const Skills = () => {
                     <Skill title={'CSS'} icon={faCss3}/>
                     <Skill title={'HTML'} icon={faHtml5}/>
                     <Skill title={'TYPESCRIPT'} icon={faTypo3}/>
-                    {/*<Skill title={'CSS'}/>*/}
                 </div>
             </div>
         </div>
