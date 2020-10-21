@@ -1,9 +1,10 @@
 @import "../common/styles/sass/variables";
 
 .mainBlock {
-    height: 100vh;
+    height: 101vh;
     display: flex;
     background-color: $bgSecondColor;
+    position: relative;
 }
 .mainItem{
     display: flex;

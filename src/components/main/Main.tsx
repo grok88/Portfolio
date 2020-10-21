@@ -5,7 +5,9 @@ import styleContainer from '../common/styles/Container.module.scss';
 
 import ReactTypingEffect from 'react-typing-effect';
 
-import { Fade } from "react-awesome-reveal";
+const Particles: any = require ('react-particles-js').default;
+
+// import { Fade } from "react-awesome-reveal";
 
 const particlesOptions = {
     particles: {
@@ -22,7 +24,7 @@ const particlesOptions = {
 const Main = () => {
     return (
         <div id='header' className={style.mainBlock}>
-            {/*<Particles className={style.particles} params={particlesOptions} />*/}
+            <Particles className={style.particles} params={particlesOptions} />
             {/*<Fade direction={'left'}>*/}
                 <div className={styleContainer.container + ' ' + style.test}>
                     <div className={style.info}>

@@ -1,4 +1,4 @@
-@import "../common/styles/sass/variables";
+@import "../../common/styles/sass/variables";
 
 // main div
 .sidebar{
@@ -11,13 +11,19 @@
   transition: all .5s ease-in-out;
   background-color: #1D1E20;
   transform: translateX(0%);
+  display: none;
 }
 
-//.sidebar.sidebarLeft{
-//  left:0;
-//}
+.show{
+  display: block;
+}
+.sidebar.sidebarLeft{
+  left:0;
+}
 
-
+.isOpen{
+  transform: translateX(0%);!important;
+}
 
 // logo
 .logo{
@@ -179,19 +185,12 @@
 @media screen and (max-width: 1200px) {
   .sidebar{
     transform: translateX(-100%);
-    //z-index: auto;
+    z-index: auto;
   }
   .burgerMenu{
     display: block;
   }
 }
-
-.isOpen{
-  transform: translateX(0%);
-}
-
-
-
 //@media screen and (min-width: 992px){
 //  .burgerMenu{
 //    display: none;
@@ -206,4 +205,3 @@
     top: 100%;
   }
 }
-
