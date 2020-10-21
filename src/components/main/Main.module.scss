@@ -30,6 +30,14 @@
 .title .subtitle{
 color:$mainColor;
 }
+.particles {
+    position: absolute;
+    left:0;
+    top:0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.3;
+}
 .photo {
     width: 300px;
     //width: 40%;
