@@ -3,13 +3,14 @@ import style from './Contact.module.scss';
 import styleContainer from '../common/styles/Container.module.scss';
 import Title from '../common/components/title/Title';
 import {faClipboard} from '@fortawesome/free-solid-svg-icons';
-import {faFacebookF, faGithub, faLinkedin, faVk, } from '@fortawesome/free-brands-svg-icons'
+import {faGithub, faLinkedin,} from '@fortawesome/free-brands-svg-icons'
 import {useFormik} from 'formik';
 import axios from 'axios';
-import { Fade } from "react-awesome-reveal";
+import {Fade} from "react-awesome-reveal";
 
 
 import {FontAwesomeIcon,} from "@fortawesome/react-fontawesome";
+import {faTelegram} from "@fortawesome/free-brands-svg-icons/faTelegram";
 
 type FormValuesType = {
     name: string;
@@ -51,6 +52,7 @@ const Contact = () => {
         validate,
         onSubmit: values => {
             axios.post('https://my-smtp-nodejs-server.herokuapp.com/sendMessage', {values})
+                // axios.post('http://localhost:3010/sendMessage', {values})
                 .then((res) => {
                     alert('message has been send!!!');
                 })
@@ -76,7 +78,8 @@ const Contact = () => {
                             <div className={style.field}>
                                 <label
                                     htmlFor="contactFormUserName">{formik.touched.name && formik.errors.name ?
-                                    <span style={{color: 'red'}}>{formik.errors.name}</span> : 'Enter your name*'}</label>
+                                    <span
+                                        style={{color: 'red'}}>{formik.errors.name}</span> : 'Enter your name*'}</label>
                                 <input type="text" id={"contactFormUserName"} {...formik.getFieldProps('name')}/>
                             </div>
                             <div className={style.field}>
@@ -91,7 +94,8 @@ const Contact = () => {
                             <div className={`${style.field} ${style.message}`}>
                                 <label htmlFor="contactFormUserMessage">
                                     {formik.touched.text && formik.errors.text ?
-                                        <span style={{color: 'red'}}>{formik.errors.text}</span> : 'Enter your Message*'}
+                                        <span
+                                            style={{color: 'red'}}>{formik.errors.text}</span> : 'Enter your Message*'}
                                 </label>
                                 <textarea id="contactFormUserMessage" cols={30}
                                           rows={6} {...formik.getFieldProps('text')}></textarea>
@@ -119,8 +123,8 @@ const Contact = () => {
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/in/alexander-goryacko" target='_blank'>
-                                    <FontAwesomeIcon icon={faLinkedin} className={style.fa}/>
+                                <a href="https://t.me/AlexanderGor88" target='_blank'>
+                                    <FontAwesomeIcon icon={faTelegram} className={style.fa}/>
                                 </a>
                             </li>
                             {/*<li>*/}

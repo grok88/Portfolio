@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className={`${styleContainer.container} ${style.footerContainer}`}>
                     <Title title={'Alexander Goryacko'} icon={faIdCard}/>
                     <div className={style.infoContact}>
-                        <ContactBlock title={"Email"} contentSpanOne={"alexgoryacko@gmail.com"}
+                        <ContactBlock title={"Email"} contentSpanOne={"alexgorwork88@gmail.com"}
                                       contentSpanTwo={"grok88@tut.by"}/>
                         <ContactBlock title={"Call me"} contentSpanOne={"+375 29 590 6006"} contentSpanTwo={""}/>
                         <ContactBlock title={"Address"} contentSpanOne={"г.Глубокое,"}

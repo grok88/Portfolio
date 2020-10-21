@@ -2,13 +2,11 @@ import React, {useState} from "react";
 import style from './Sidebar.module.scss';
 import frontEnd from '../../assets/images/frontend.jpg';
 import {Link} from "react-scroll";
-import { BurgerNav } from "./burger-nav/BurgerNav";
 
 export const Sidebar = () => {
     let [collapsed, setCollapsed] = useState<boolean>(false);
 
     const toggleMenu = () => {
-        console.log('toggle');
         setCollapsed(!collapsed);
     }
 
@@ -73,15 +71,14 @@ export const Sidebar = () => {
                 </nav>
             </div>
 
-            <div className={collapsed ? `${style.burgerMenu} ${style.menuOpen}`: `${style.burgerMenu}`} onClick={toggleMenu} >
+            <div className={collapsed ? `${style.burgerMenu} ${style.menuOpen}` : `${style.burgerMenu}`}
+                 onClick={toggleMenu}>
                 <div className={style.inlineLineFix}>
                     <div className={style.dlLineMenu + ' ' + style.dlLineHalf + ' ' + style.dlFirstLine}></div>
                     <div className={style.dlLineMenu}></div>
                     <div className={style.dlLineMenu + ' ' + style.dlLineHalf + ' ' + style.dlLastLine}></div>
                 </div>
             </div>
-
-            {/*<BurgerNav/>*/}
         </>
     );
 }
