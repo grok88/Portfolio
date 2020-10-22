@@ -17,8 +17,10 @@ const Works = () => {
     return (
         <div id={'portfolio'} className={style.worksBlock}>
             {/*<div className={style.line}></div>*/}
-            <Fade direction={'left'}>
+            {/*<Fade direction={'left'}>*/}
                 <div className={`${styleContainer.container} ${style.worksContainer}`}>
+                    <Fade direction={'left'}>
+
                     <Title title={'Portfolio.'} icon={faBriefcase}/>
                     <div className={style.works}>
                         <Work title={'Social network'}
@@ -28,8 +30,9 @@ const Works = () => {
                         <Work title={'Work 3'} description={'Lorem ipsum dolor sit amet.'} imageUrl={plug}/>
                         <Work title={'Work 4'} description={'Lorem ipsum dolor sit amet.'} imageUrl={plug}/>
                     </div>
+                    </Fade>
                 </div>
-            </Fade>
+            {/*</Fade>*/}
         </div>
     );
 }

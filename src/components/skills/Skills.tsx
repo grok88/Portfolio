@@ -11,20 +11,16 @@ import {Fade} from "react-awesome-reveal";
 const Skills = () => {
     return (
         <div className={style.skillBlock}>
-            <Fade direction={'left'}>
+
                 <div id={'skills'} className={`${styleContainer.container} ${style.skillContainer}`}>
+                    <Fade direction={'left'}>
                     <Title title={'My skills.'} icon={faLaptopCode}/>
                     <div className={style.aboutInfo}>
                         <div className={style.aboutInfoBlock}>
                             <div className={style.aboutDescription}>
                                 <h3 className={style.title}>Hello, Im Alexander
                                     Goryacko</h3>
-                                <p>To an English person, it will seem like simplified English, as a skeptical
-                                    Cambridge friend of mine told me what Occidental is. The European languages are
-                                    members
-                                    of
-                                    the
-                                    same family.</p>
+                                <p>Highly ambitious and extremely motivated Front-End Developer is searching for a job position. I prefer working in a team because I consider bouncing ideas off to be crutial for finding a solution to any problems. By the way, it can contribute to my professional growth through deepening knowledge in front-end development. In addition, I study Enghlish in my spare time in order to achieve the highest level of it. </p>
                             </div>
                         </div>
                         <div className={style.aboutInfoBlock}>
@@ -56,8 +52,9 @@ const Skills = () => {
                         <Skill title={'HTML'} icon={faHtml5}/>
                         <Skill title={'TYPESCRIPT'} icon={faTypo3}/>
                     </div>
+                    </Fade>
                 </div>
-            </Fade>
+
         </div>
     );
 }

@@ -26,7 +26,7 @@ const Main = () => {
         <div id='header' className={style.mainBlock}>
             <Particles className={style.particles} params={particlesOptions} />
             {/*<Fade direction={'left'}>*/}
-                <div className={styleContainer.container + ' ' + style.test}>
+                <div className={styleContainer.container + ' ' + style.mainContainer}>
                     <div className={style.info}>
                         <span className={style.welcome}>Hi There !</span>
                         <h1 className={style.title}>I'm<span className={style.subtitle}> Alexander Goryacko</span></h1>
