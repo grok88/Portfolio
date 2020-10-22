@@ -29,15 +29,14 @@ const Main = () => {
                 <div className={styleContainer.container + ' ' + style.mainContainer}>
                     <div className={style.info}>
                         <span className={style.welcome}>Hi There !</span>
-                        <h1 className={style.title}>I'm<span className={style.subtitle}> Alexander Goryacko</span></h1>
-                        {/*<p>Frontend Developer</p>*/}
+                        <h1 className={style.title}>I'm<span className={style.subtitle}> Alexander Goryachko</span></h1>
                         <ReactTypingEffect
                             text='Frontend Developer'
                     />
                     </div>
-                    <div className={style.photo}>
-                        {/*<img src={photo} alt=""/>*/}
-                    </div>
+                    {/*<div className={style.photo}>*/}
+                    {/*    /!*<img src={photo} alt=""/>*!/*/}
+                    {/*</div>*/}
                 </div>
             {/*</Fade>*/}
         </div>

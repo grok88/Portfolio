@@ -16,23 +16,21 @@ import {Fade} from "react-awesome-reveal";
 const Works = () => {
     return (
         <div id={'portfolio'} className={style.worksBlock}>
-            {/*<div className={style.line}></div>*/}
-            {/*<Fade direction={'left'}>*/}
-                <div className={`${styleContainer.container} ${style.worksContainer}`}>
-                    <Fade direction={'left'}>
-
+            <div className={`${styleContainer.container} ${style.worksContainer}`}>
+                <Fade direction={'left'} style={{width: '100%'}}>
                     <Title title={'Portfolio.'} icon={faBriefcase}/>
                     <div className={style.works}>
                         <Work title={'Social network'}
                               description={'Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.'}
-                              imageUrl={social}/>
-                        <Work title={'TodoList'} description={'Lorem ipsum dolor sit amet.'} imageUrl={todolist}/>
-                        <Work title={'Work 3'} description={'Lorem ipsum dolor sit amet.'} imageUrl={plug}/>
-                        <Work title={'Work 4'} description={'Lorem ipsum dolor sit amet.'} imageUrl={plug}/>
+                              imageUrl={social} href={'https://grok88.github.io/socialWeb/'}/>
+                        <Work title={'TodoList'} description={'Lorem ipsum dolor sit amet.'} imageUrl={todolist}
+                              href={'#'}/>
+                        <Work title={'Cards_project'} description={'Lorem ipsum dolor sit amet.'} imageUrl={plug}
+                              href={'https://grok88.github.io/cards_project/'}/>
+                        {/*<Work title={'Work 4'} description={'Lorem ipsum dolor sit amet.'} imageUrl={plug}/>*/}
                     </div>
-                    </Fade>
-                </div>
-            {/*</Fade>*/}
+                </Fade>
+            </div>
         </div>
     );
 }

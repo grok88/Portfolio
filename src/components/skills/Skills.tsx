@@ -13,7 +13,7 @@ const Skills = () => {
         <div className={style.skillBlock}>
 
                 <div id={'skills'} className={`${styleContainer.container} ${style.skillContainer}`}>
-                    <Fade direction={'left'}>
+                    <Fade direction={'left'} style={{width:'100%'}}>
                     <Title title={'My skills.'} icon={faLaptopCode}/>
                     <div className={style.aboutInfo}>
                         <div className={style.aboutInfoBlock}>

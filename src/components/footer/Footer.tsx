@@ -11,7 +11,7 @@ const Footer = () => {
         <div className={style.footerBlock}>
             <Fade direction={'left'}>
                 <div className={`${styleContainer.container} ${style.footerContainer}`}>
-                    <Title title={'Alexander Goryacko'} icon={faIdCard}/>
+                    <Title title={'Alexander Goryachko'} icon={faIdCard}/>
                     <div className={style.infoContact}>
                         <ContactBlock title={"Email"} contentSpanOne={"alexgorwork88@gmail.com"}
                                       contentSpanTwo={"grok88@tut.by"}/>

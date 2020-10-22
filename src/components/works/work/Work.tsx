@@ -5,13 +5,14 @@ type PropsType = {
     title: string;
     description: string;
     imageUrl:string;
+    href:string;
 }
 
 const Work = (props: PropsType) => {
-    const {title, description,imageUrl} = props;
+    const {title, description,imageUrl,href} = props;
     return (
         <div className={style.work}>
-            <a href="#" className={style.workItem}>
+            <a href={href} className={style.workItem} target='_blank'>
                 <div className={style.workImage}>
                     <img src={imageUrl} alt="#"/>
                 </div>
