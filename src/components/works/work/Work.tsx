@@ -16,10 +16,12 @@ const Work = (props: PropsType) => {
                 <div className={style.workImage}>
                     <img src={imageUrl} alt="#"/>
                 </div>
+
                 <div className={style.workContent}>
                     <span className={style.cat}>{title}</span>
-                    <h4 className={style.title}>Best Way to Design </h4>
+                    <h4 className={style.title}>In development </h4>
                     <div className={style.workDescription}>{description}</div>
+                    {/*<div className={style.workDescription}>{repo}</div>*/}
                 </div>
             </a>
         </div>
