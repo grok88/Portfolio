@@ -24,7 +24,7 @@ const Works = () => {
                               description={'This social network is a perfect example of my skills implemented in the technology of creating a system corresponding to the assaigned task. '}
                               imageUrl={social} href={'https://grok88.github.io/socialWeb/'}/>
                         <Work title={'TodoList'} description={'This project is an example of usage of React/Redux/Redux Toolkit along with Redux Thunk, separation in UI BLL DAL , Formik, Material UI usage.  In addition, Storybook and Jest have been used, as well.'} imageUrl={todolist}
-                              href={'#'}/>
+                              href={'https://grok88.github.io/TodoList_new/'}/>
                         <Work title={'Cards_project'} description={'Form implementation, table implementation along with files have been imbedded in this project'} imageUrl={plug}
                               href={'https://grok88.github.io/cards_project/'}/>
                         {/*<Work title={'Work 4'} description={'Lorem ipsum dolor sit amet.'} imageUrl={plug}/>*/}
