@@ -14,20 +14,43 @@ import plug from './../../assets/images/plug.jpg'
 import {Fade} from "react-awesome-reveal";
 
 const Works = () => {
+    const works = [
+        {
+            title: 'Social network',
+            description: 'This social network is a example of my skills implemented in the technology of creating a system corresponding to the assaigned task. ',
+            imageUrl: social,
+            href: 'https://grok88.github.io/socialWeb/',
+            repository: 'https://github.com/grok88/socialWeb'
+        },
+        {
+            title: 'TodoList',
+            description: 'This project is an example of usage of React/Redux/Redux Toolkit along with Redux Thunk, separation in UI BLL DAL , Formik, Material UI usage.  In addition, Storybook and Jest have been used, as well.',
+            imageUrl: todolist,
+            href: 'https://grok88.github.io/TodoList_new/',
+            repository: 'https://github.com/grok88/TodoList_new'
+        },
+        {
+            title: 'Cards_project',
+            description: 'Form implementation, table implementation along with files have been imbedded in this project',
+            imageUrl: plug,
+            href: 'https://grok88.github.io/cards_project/',
+            repository: 'https://github.com/grok88/cards_project'
+        }
+    ]
     return (
         <div id={'portfolio'} className={style.worksBlock}>
             <div className={`${styleContainer.container} ${style.worksContainer}`}>
                 <Fade direction={'left'} style={{width: '100%'}}>
                     <Title title={'Portfolio.'} icon={faBriefcase}/>
                     <div className={style.works}>
-                        <Work title={'Social network'}
-                              description={'This social network is a perfect example of my skills implemented in the technology of creating a system corresponding to the assaigned task. '}
-                              imageUrl={social} href={'https://grok88.github.io/socialWeb/'}/>
-                        <Work title={'TodoList'} description={'This project is an example of usage of React/Redux/Redux Toolkit along with Redux Thunk, separation in UI BLL DAL , Formik, Material UI usage.  In addition, Storybook and Jest have been used, as well.'} imageUrl={todolist}
-                              href={'https://grok88.github.io/TodoList_new/'}/>
-                        <Work title={'Cards_project'} description={'Form implementation, table implementation along with files have been imbedded in this project'} imageUrl={plug}
-                              href={'https://grok88.github.io/cards_project/'}/>
-                        {/*<Work title={'Work 4'} description={'Lorem ipsum dolor sit amet.'} imageUrl={plug}/>*/}
+                        {
+                            works.map((work, i) => <Work key={i}
+                                                         title={work.title}
+                                                         description={work.description}
+                                                         imageUrl={work.imageUrl}
+                                                         href={work.href}
+                                                         repository={work.repository}/>)
+                        }
                     </div>
                 </Fade>
             </div>

@@ -6,24 +6,29 @@ type PropsType = {
     description: string;
     imageUrl:string;
     href:string;
+    repository:string
 }
 
 const Work = (props: PropsType) => {
-    const {title, description,imageUrl,href} = props;
+    const {title, description,imageUrl,href,repository} = props;
     return (
         <div className={style.work}>
-            <a href={href} className={style.workItem} target='_blank'>
-                <div className={style.workImage}>
-                    <img src={imageUrl} alt="#"/>
-                </div>
-
-                <div className={style.workContent}>
-                    <span className={style.cat}>{title}</span>
-                    <h4 className={style.title}>In development </h4>
-                    <div className={style.workDescription}>{description}</div>
-                    {/*<div className={style.workDescription}>{repo}</div>*/}
-                </div>
-            </a>
+           <div className={style.workContainer}>
+               <a href={href} className={style.workItem} target='_blank'>
+                   <div className={style.workImage}>
+                       <img src={imageUrl} alt="#"/>
+                   </div>
+               </a>
+               <div className={style.workContent}>
+                   <span className={style.cat}>{title}</span>
+                   <h4 className={style.title}>In development </h4>
+                   <div className={style.workDescription}>{description}</div>
+                   <div >
+                       <a href={repository} target='_blank' className={style.cat}>Open code</a>
+                   </div>
+                   {/*<div className={style.workDescription}>{repo}</div>*/}
+               </div>
+           </div>
         </div>
     );
 }

@@ -18,7 +18,7 @@ const Skill = (props: SkillType) => {
                     <FontAwesomeIcon icon={props.icon} className={style.fa}/>
                 </div>
                 <h4 className={style.title}>{title}</h4>
-                <p className={style.separator}>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                {/*<p className={style.separator}>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>*/}
             </div>
         </div>
     );
