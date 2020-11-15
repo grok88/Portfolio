@@ -17,8 +17,7 @@ export const Sidebar = () => {
                 <div className={style.logo}>
                     <h1>
                         <a href="#">
-                            <img src={photo} alt="logo"/>
-                        </a>
+                                <img src={frontEnd} alt="logo"/></a>
                     </h1>
                 </div>
                 <nav className={style.menu}>
