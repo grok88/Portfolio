@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import style from './Sidebar.module.scss';
 import frontEnd from '../../assets/images/frontend.jpg';
 import {Link} from "react-scroll";
+import photo from "../../assets/images/photo.jpg";
 
 export const Sidebar = () => {
     let [collapsed, setCollapsed] = useState<boolean>(false);
@@ -16,7 +17,7 @@ export const Sidebar = () => {
                 <div className={style.logo}>
                     <h1>
                         <a href="#">
-                            <img src={frontEnd} alt="logo"/>
+                            <img src={photo} alt="logo"/>
                         </a>
                     </h1>
                 </div>
