@@ -8,6 +8,7 @@ import {faBriefcase} from '@fortawesome/free-solid-svg-icons'
 
 import Title from '../common/components/title/Title';
 import social from './../../assets/images/social.jpg'
+import movies from '../../assets/images/movies.jpg'
 import todolist from './../../assets/images/todolist.jpg'
 import plug from './../../assets/images/plug.jpg'
 
@@ -15,6 +16,14 @@ import {Fade} from "react-awesome-reveal";
 
 const Works = () => {
     const works = [
+        {
+            title: 'Movies_project',
+            description: 'This project is an example of usage of React/Redux along with Redux Thunk, separation in' +
+                ' UI BLL DAL , Formik, Axios.',
+            imageUrl: movies,
+            href: 'http://grok88.github.io/movie_proj/',
+            repository: 'https://github.com/grok88/movie_proj'
+        },
         {
             title: 'Social network',
             description: 'This social network is a example of my skills implemented in the technology of creating a system corresponding to the assaigned task. ',
