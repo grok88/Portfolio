@@ -10,7 +10,7 @@ import Title from '../common/components/title/Title';
 import social from './../../assets/images/social.jpg'
 import movies from '../../assets/images/movies.jpg'
 import todolist from './../../assets/images/todolist.jpg'
-import plug from './../../assets/images/plug.jpg'
+import todo_fb from './../../assets/images/todo_FB.jpg'
 
 import {Fade} from "react-awesome-reveal";
 
@@ -36,15 +36,23 @@ const Works = () => {
             description: 'This project is an example of usage of React/Redux/Redux Toolkit along with Redux Thunk, separation in UI BLL DAL , Formik, Material UI usage.  In addition, Storybook and Jest have been used, as well.',
             imageUrl: todolist,
             href: 'https://grok88.github.io/TodoList_new/',
-            repository: 'https://github.com/grok88/TodoList_new'
+            repository: 'https://github.com/grok88/Todo_fb'
         },
         {
-            title: 'Cards_project',
-            description: 'Form implementation, table implementation along with files have been imbedded in this project',
-            imageUrl: plug,
-            href: 'https://grok88.github.io/cards_project/',
-            repository: 'https://github.com/grok88/cards_project'
-        }
+            title: 'TodoList_firebase',
+            description: 'This project is an example of usage of React/Redux/Firebase along with Redux Thunk,' +
+                ' separation in UI BLL DAL , Formik, Material UI usage.',
+            imageUrl: todo_fb,
+            href: 'https://react-todo-62c1f.web.app/login',
+            repository: 'https://github.com/grok88/TodoList_new'
+        },
+        // {
+        //     title: 'Cards_project',
+        //     description: 'Form implementation, table implementation along with files have been imbedded in this project',
+        //     imageUrl: plug,
+        //     href: 'https://grok88.github.io/cards_project/',
+        //     repository: 'https://github.com/grok88/cards_project'
+        // }
     ]
     return (
         <div id={'portfolio'} className={style.worksBlock}>
