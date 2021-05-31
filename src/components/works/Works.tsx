@@ -43,8 +43,8 @@ const Works = () => {
             description: 'This project is an example of usage of React/Redux/Firebase along with Redux Thunk,' +
                 ' separation in UI BLL DAL , Formik, Material UI usage.',
             imageUrl: todo_fb,
-            href: 'https://github.com/grok88/Todo_fb',
-            repository: ''
+            href: 'https://react-todo-62c1f.web.app',
+            repository: 'https://github.com/grok88/Todo_fb'
         },
         // {
         //     title: 'Cards_project',
